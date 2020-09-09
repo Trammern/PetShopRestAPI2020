@@ -1,0 +1,14 @@
+C:\Work\PetShopApp2020\PetShopApp.Infrastructure.Data\bin\Debug\netcoreapp3.1\PetShopApp.Infrastructure.Data.deps.json
+C:\Work\PetShopApp2020\PetShopApp.Infrastructure.Data\bin\Debug\netcoreapp3.1\PetShopApp.Infrastructure.Data.dll
+C:\Work\PetShopApp2020\PetShopApp.Infrastructure.Data\bin\Debug\netcoreapp3.1\PetShopApp.Infrastructure.Data.pdb
+C:\Work\PetShopApp2020\PetShopApp.Infrastructure.Data\bin\Debug\netcoreapp3.1\PetShopApp.Core.dll
+C:\Work\PetShopApp2020\PetShopApp.Infrastructure.Data\bin\Debug\netcoreapp3.1\PetShopApp.Core.Entities.dll
+C:\Work\PetShopApp2020\PetShopApp.Infrastructure.Data\bin\Debug\netcoreapp3.1\PetShopApp.Core.Entities.pdb
+C:\Work\PetShopApp2020\PetShopApp.Infrastructure.Data\bin\Debug\netcoreapp3.1\PetShopApp.Core.pdb
+C:\Work\PetShopApp2020\PetShopApp.Infrastructure.Data\obj\Debug\netcoreapp3.1\PetShopApp.Infrastructure.Data.csprojAssemblyReference.cache
+C:\Work\PetShopApp2020\PetShopApp.Infrastructure.Data\obj\Debug\netcoreapp3.1\PetShopApp.Infrastructure.Data.AssemblyInfoInputs.cache
+C:\Work\PetShopApp2020\PetShopApp.Infrastructure.Data\obj\Debug\netcoreapp3.1\PetShopApp.Infrastructure.Data.AssemblyInfo.cs
+C:\Work\PetShopApp2020\PetShopApp.Infrastructure.Data\obj\Debug\netcoreapp3.1\PetShopApp.Infrastructure.Data.csproj.CoreCompileInputs.cache
+C:\Work\PetShopApp2020\PetShopApp.Infrastructure.Data\obj\Debug\netcoreapp3.1\PetShopApp.Infrastructure.Data.csproj.CopyComplete
+C:\Work\PetShopApp2020\PetShopApp.Infrastructure.Data\obj\Debug\netcoreapp3.1\PetShopApp.Infrastructure.Data.dll
+C:\Work\PetShopApp2020\PetShopApp.Infrastructure.Data\obj\Debug\netcoreapp3.1\PetShopApp.Infrastructure.Data.pdb

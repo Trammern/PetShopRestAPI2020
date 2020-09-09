@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "M6RRZxaeGC3qfKXlNh6poQ66cs16LNLwws6yoWO58+IgMT1ULrgvk19CbDP7uX9bSzyE6KpK10v08dplMSfavA==",
+  "success": true,
+  "projectFilePath": "C:\\Work\\PetShopApp2020\\PetShopApplication\\PetShopApplication.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Tramm\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.7\\microsoft.extensions.dependencyinjection.3.1.7.nupkg.sha512",
+    "C:\\Users\\Tramm\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.7\\microsoft.extensions.dependencyinjection.abstractions.3.1.7.nupkg.sha512"
+  ],
+  "logs": []
+}
