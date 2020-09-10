@@ -27,5 +27,8 @@ namespace PetShopApp.Core.ApplicationServices
 
         Pet DeletePet(int Petid);
   
+
+
+
     }
 }

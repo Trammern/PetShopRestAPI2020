@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QB/aEpXzI3GvtzQdXkKT6Ttne1j0RVFDukRF/qEgyZx6C3hDm6EswRaVKENp8wVW+Z8znZ0iwsinAy0C8s6SyA==",
+  "dgSpecHash": "tnnKF+J2wfsMj16yNxdKi2usA1TXzo4Xz+Zq1L72nITgeQC0qyGrOk6Cw+GZMTHpQG8wcu4LQKG1wwFKiRZskQ==",
   "success": true,
-  "projectFilePath": "C:\\Work\\PetShopApp2020\\PetShopApp.Core\\PetShopApp.Core.csproj",
+  "projectFilePath": "C:\\Work\\PetShopRestAPI\\PetShopApp2020-master\\PetShopApp.Core\\PetShopApp.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

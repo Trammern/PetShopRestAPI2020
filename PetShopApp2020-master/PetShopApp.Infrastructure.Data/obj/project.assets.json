@@ -51,11 +51,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Work\\PetShopApp2020\\PetShopApp.Infrastructure.Data\\PetShopApp.Infrastructure.Data.csproj",
+      "projectUniqueName": "C:\\Work\\PetShopRestAPI\\PetShopApp2020-master\\PetShopApp.Infrastructure.Data\\PetShopApp.Infrastructure.Data.csproj",
       "projectName": "PetShopApp.Infrastructure.Data",
-      "projectPath": "C:\\Work\\PetShopApp2020\\PetShopApp.Infrastructure.Data\\PetShopApp.Infrastructure.Data.csproj",
+      "projectPath": "C:\\Work\\PetShopRestAPI\\PetShopApp2020-master\\PetShopApp.Infrastructure.Data\\PetShopApp.Infrastructure.Data.csproj",
       "packagesPath": "C:\\Users\\Tramm\\.nuget\\packages\\",
-      "outputPath": "C:\\Work\\PetShopApp2020\\PetShopApp.Infrastructure.Data\\obj\\",
+      "outputPath": "C:\\Work\\PetShopRestAPI\\PetShopApp2020-master\\PetShopApp.Infrastructure.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Tramm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -71,11 +71,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Work\\PetShopApp2020\\PetShopApp.Core.Entities\\PetShopApp.Core.Entities.csproj": {
-              "projectPath": "C:\\Work\\PetShopApp2020\\PetShopApp.Core.Entities\\PetShopApp.Core.Entities.csproj"
+            "C:\\Work\\PetShopRestAPI\\PetShopApp2020-master\\PetShopApp.Core.Entities\\PetShopApp.Core.Entities.csproj": {
+              "projectPath": "C:\\Work\\PetShopRestAPI\\PetShopApp2020-master\\PetShopApp.Core.Entities\\PetShopApp.Core.Entities.csproj"
             },
-            "C:\\Work\\PetShopApp2020\\PetShopApp.Core\\PetShopApp.Core.csproj": {
-              "projectPath": "C:\\Work\\PetShopApp2020\\PetShopApp.Core\\PetShopApp.Core.csproj"
+            "C:\\Work\\PetShopRestAPI\\PetShopApp2020-master\\PetShopApp.Core\\PetShopApp.Core.csproj": {
+              "projectPath": "C:\\Work\\PetShopRestAPI\\PetShopApp2020-master\\PetShopApp.Core\\PetShopApp.Core.csproj"
             }
           }
         }

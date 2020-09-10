@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30406.217
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetShopApplication", "PetShopApplication\PetShopApplication.csproj", "{C2A7B1CF-2334-4981-B103-C8A8940BCC08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetShopApplication", "PetShopApplication\PetShopApplication.csproj", "{C2A7B1CF-2334-4981-B103-C8A8940BCC08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetShopApp.Core.Entities", "PetShopApp.Core.Entities\PetShopApp.Core.Entities.csproj", "{F423E89B-0367-45D3-B641-20726C4D2C1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetShopApp.Core.Entities", "PetShopApp.Core.Entities\PetShopApp.Core.Entities.csproj", "{F423E89B-0367-45D3-B641-20726C4D2C1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetShopApp.Core", "PetShopApp.Core\PetShopApp.Core.csproj", "{61818367-BE9A-4678-B918-D8E902B47513}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetShopApp.Core", "PetShopApp.Core\PetShopApp.Core.csproj", "{61818367-BE9A-4678-B918-D8E902B47513}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetShopApp.Infrastructure.Data", "PetShopApp.Infrastructure.Data\PetShopApp.Infrastructure.Data.csproj", "{89473601-00E4-45BD-BED3-0824B29E26D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetShopApp.Infrastructure.Data", "PetShopApp.Infrastructure.Data\PetShopApp.Infrastructure.Data.csproj", "{89473601-00E4-45BD-BED3-0824B29E26D2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{F3754922-8CA8-4C82-85BB-4D9DDE1A8E10}"
 EndProject
@@ -18,6 +18,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{2B90C850-DBE4-4B25-B90D-6C34304B2871}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositories", "{154533BB-242D-42BA-BD0F-4F1E2EDC77BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetShop2020.RestAPI", "PetShop2020.RestAPI\PetShop2020.RestAPI.csproj", "{5B109A4E-C4C5-4239-A47F-B7685FBA5515}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{89473601-00E4-45BD-BED3-0824B29E26D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89473601-00E4-45BD-BED3-0824B29E26D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89473601-00E4-45BD-BED3-0824B29E26D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B109A4E-C4C5-4239-A47F-B7685FBA5515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B109A4E-C4C5-4239-A47F-B7685FBA5515}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B109A4E-C4C5-4239-A47F-B7685FBA5515}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B109A4E-C4C5-4239-A47F-B7685FBA5515}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +57,7 @@ Global
 		{61818367-BE9A-4678-B918-D8E902B47513} = {F3754922-8CA8-4C82-85BB-4D9DDE1A8E10}
 		{89473601-00E4-45BD-BED3-0824B29E26D2} = {81BDC936-68F9-493F-A78A-2A27D735BC37}
 		{154533BB-242D-42BA-BD0F-4F1E2EDC77BB} = {81BDC936-68F9-493F-A78A-2A27D735BC37}
+		{5B109A4E-C4C5-4239-A47F-B7685FBA5515} = {2B90C850-DBE4-4B25-B90D-6C34304B2871}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {120AF057-834D-410F-8272-D89ECE73A3C9}

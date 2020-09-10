@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Work\\PetShopApp2020\\PetShopApp.Core\\PetShopApp.Core.csproj",
+      "projectUniqueName": "C:\\Work\\PetShopRestAPI\\PetShopApp2020-master\\PetShopApp.Core\\PetShopApp.Core.csproj",
       "projectName": "PetShopApp.Core",
-      "projectPath": "C:\\Work\\PetShopApp2020\\PetShopApp.Core\\PetShopApp.Core.csproj",
+      "projectPath": "C:\\Work\\PetShopRestAPI\\PetShopApp2020-master\\PetShopApp.Core\\PetShopApp.Core.csproj",
       "packagesPath": "C:\\Users\\Tramm\\.nuget\\packages\\",
-      "outputPath": "C:\\Work\\PetShopApp2020\\PetShopApp.Core\\obj\\",
+      "outputPath": "C:\\Work\\PetShopRestAPI\\PetShopApp2020-master\\PetShopApp.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Tramm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,8 +52,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Work\\PetShopApp2020\\PetShopApp.Core.Entities\\PetShopApp.Core.Entities.csproj": {
-              "projectPath": "C:\\Work\\PetShopApp2020\\PetShopApp.Core.Entities\\PetShopApp.Core.Entities.csproj"
+            "C:\\Work\\PetShopRestAPI\\PetShopApp2020-master\\PetShopApp.Core.Entities\\PetShopApp.Core.Entities.csproj": {
+              "projectPath": "C:\\Work\\PetShopRestAPI\\PetShopApp2020-master\\PetShopApp.Core.Entities\\PetShopApp.Core.Entities.csproj"
             }
           }
         }
