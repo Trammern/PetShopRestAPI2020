@@ -51,5 +51,15 @@ C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShop2020.RestAPI\bin\Debug\netco
 C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShop2020.RestAPI\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShop2020.RestAPI\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
 C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShop2020.RestAPI\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShop2020.RestAPI\bin\Debug\netcoreapp3.1\PetShopApp.Filter.dll
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShop2020.RestAPI\bin\Debug\netcoreapp3.1\PetShopApp.Filter.pdb
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShop2020.RestAPI\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShop2020.RestAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShop2020.RestAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShop2020.RestAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShop2020.RestAPI\obj\Debug\netcoreapp3.1\PetShop2020.RestAPI.csproj.CoreCompileInputs.cache
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShop2020.RestAPI\obj\Debug\netcoreapp3.1\PetShop2020.RestAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShop2020.RestAPI\obj\Debug\netcoreapp3.1\PetShop2020.RestAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShop2020.RestAPI\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\PetShop2020API - Web Deploy\profile.arm.json
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShop2020.RestAPI\bin\Debug\netcoreapp3.1\PetShop2020.RestAPI.xml
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShop2020.RestAPI\obj\Debug\netcoreapp3.1\PetShop2020.RestAPI.xml

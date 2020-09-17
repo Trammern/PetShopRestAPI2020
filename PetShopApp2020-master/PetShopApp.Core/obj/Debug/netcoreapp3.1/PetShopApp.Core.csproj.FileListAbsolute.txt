@@ -22,3 +22,5 @@ C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Core\obj\Debug\netcoreap
 C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Core\obj\Debug\netcoreapp3.1\PetShopApp.Core.csproj.CopyComplete
 C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Core\obj\Debug\netcoreapp3.1\PetShopApp.Core.dll
 C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Core\obj\Debug\netcoreapp3.1\PetShopApp.Core.pdb
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Core\bin\Debug\netcoreapp3.1\PetShopApp.Filter.dll
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Core\bin\Debug\netcoreapp3.1\PetShopApp.Filter.pdb

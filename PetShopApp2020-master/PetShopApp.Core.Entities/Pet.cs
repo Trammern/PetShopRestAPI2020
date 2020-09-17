@@ -21,12 +21,14 @@ namespace PetShopApp.Core.Entities
         public string PreviousOwner { get; set; }
 
         public double Price { get; set; }
+        public Owner owner { get; set; }
+
 
         public override string ToString()
         {
             return PetId + " " + PetName + " " + PetType + " " + BirthDay + " " + Price;
         }
-
+        
 
     }
 }

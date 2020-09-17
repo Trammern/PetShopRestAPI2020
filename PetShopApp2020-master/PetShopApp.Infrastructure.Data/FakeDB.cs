@@ -11,8 +11,14 @@ namespace PetShopApp.Infrastructure.Data
         public static int PetId = 1;
         public static List<Pet> pets = new List<Pet>();
 
+        public static int OwnerId = 1;
+        public static List<Owner> Owners = new List<Owner>();
 
-
+     //   private static FakeDB fakeDBInstance;
+     //   private FakeDB()
+     //   {
+     //       Datainitializer.InitData;
+     //   }
 
     }
 }

@@ -1,0 +1,12 @@
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Filter\bin\Debug\netcoreapp3.1\PetShopApp.Filter.deps.json
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Filter\bin\Debug\netcoreapp3.1\PetShopApp.Filter.dll
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Filter\bin\Debug\netcoreapp3.1\PetShopApp.Filter.pdb
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Filter\bin\Debug\netcoreapp3.1\PetShopApp.Core.Entities.dll
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Filter\bin\Debug\netcoreapp3.1\PetShopApp.Core.Entities.pdb
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Filter\obj\Debug\netcoreapp3.1\PetShopApp.Filter.csprojAssemblyReference.cache
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Filter\obj\Debug\netcoreapp3.1\PetShopApp.Filter.AssemblyInfoInputs.cache
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Filter\obj\Debug\netcoreapp3.1\PetShopApp.Filter.AssemblyInfo.cs
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Filter\obj\Debug\netcoreapp3.1\PetShopApp.Filter.csproj.CoreCompileInputs.cache
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Filter\obj\Debug\netcoreapp3.1\PetShopApp.Filter.csproj.CopyComplete
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Filter\obj\Debug\netcoreapp3.1\PetShopApp.Filter.dll
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Filter\obj\Debug\netcoreapp3.1\PetShopApp.Filter.pdb

@@ -1,0 +1,16 @@
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Infrastructure.Data\bin\Release\netcoreapp3.1\PetShopApp.Infrastructure.Data.deps.json
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Infrastructure.Data\bin\Release\netcoreapp3.1\PetShopApp.Infrastructure.Data.dll
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Infrastructure.Data\bin\Release\netcoreapp3.1\PetShopApp.Infrastructure.Data.pdb
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Infrastructure.Data\bin\Release\netcoreapp3.1\PetShopApp.Core.dll
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Infrastructure.Data\bin\Release\netcoreapp3.1\PetShopApp.Core.Entities.dll
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Infrastructure.Data\bin\Release\netcoreapp3.1\PetShopApp.Filter.dll
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Infrastructure.Data\bin\Release\netcoreapp3.1\PetShopApp.Core.Entities.pdb
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Infrastructure.Data\bin\Release\netcoreapp3.1\PetShopApp.Core.pdb
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Infrastructure.Data\bin\Release\netcoreapp3.1\PetShopApp.Filter.pdb
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Infrastructure.Data\obj\Release\netcoreapp3.1\PetShopApp.Infrastructure.Data.csprojAssemblyReference.cache
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Infrastructure.Data\obj\Release\netcoreapp3.1\PetShopApp.Infrastructure.Data.AssemblyInfoInputs.cache
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Infrastructure.Data\obj\Release\netcoreapp3.1\PetShopApp.Infrastructure.Data.AssemblyInfo.cs
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Infrastructure.Data\obj\Release\netcoreapp3.1\PetShopApp.Infrastructure.Data.csproj.CoreCompileInputs.cache
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Infrastructure.Data\obj\Release\netcoreapp3.1\PetShopApp.Infrastructure.Data.csproj.CopyComplete
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Infrastructure.Data\obj\Release\netcoreapp3.1\PetShopApp.Infrastructure.Data.dll
+C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Infrastructure.Data\obj\Release\netcoreapp3.1\PetShopApp.Infrastructure.Data.pdb

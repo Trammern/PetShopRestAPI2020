@@ -1,5 +1,6 @@
 ﻿using PetShopApp.Core.DomainServices;
 using PetShopApp.Core.Entities;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,10 +12,12 @@ namespace PetShopApp.Core.ApplicationServices.Services
     public class PetServices : IPetService
     {
         readonly IPetRepository _petRepo;
+        readonly IOwnerRepository _ownerRepo;
 
-        public PetServices(IPetRepository petRepository)
+        public PetServices(IPetRepository petRepository, IOwnerRepository ownerRepository)
         {
             _petRepo = petRepository;
+            _ownerRepo = ownerRepository;
         }
 
         #region Create
@@ -47,11 +50,20 @@ namespace PetShopApp.Core.ApplicationServices.Services
         /// Get all pets and sort them by ID
         /// </summary>
         /// <returns> </returns>
-        public List<Pet> GetAllPets()
+       /* public IEnumerable<Pet> GetAllPets()
         {
             _petRepo.ReadPets().Sort((x, y) => x.PetId.CompareTo(y.PetId));
             return _petRepo.ReadPets();
 
+        }
+       */
+        public FilteredList<Pet> GetAllPets(Filter filter)
+        {
+            if (!string.IsNullOrEmpty(filter.SearchText) && string.IsNullOrEmpty(filter.SearchField))
+            {
+                filter.SearchField = "PetName";
+            }
+            return _petRepo.ReadAll(filter);
         }
 
         public Pet FindPetById(int Petid)
@@ -84,7 +96,22 @@ namespace PetShopApp.Core.ApplicationServices.Services
             pet.Price = petEdit.Price;
 
             return pet;
+
+           
+
         }
+        /*
+        public Pet GetAllPetsWithOwners(int PetId)
+        {
+            var pet = _petRepo.FindPetByID(PetId);
+
+            pet.owner = _ownerRepo.ReadAll()
+                  .Where(owner => owner.Pet.PetId == pet.PetId)
+                  .ToList();
+
+            return pet;
+        }
+        */
         #endregion
 
         #region Delete
@@ -92,7 +119,12 @@ namespace PetShopApp.Core.ApplicationServices.Services
         {
             return _petRepo.DeletePet(Petid);
         }
+
+      
+
+
         #endregion
+
 
     }
 }

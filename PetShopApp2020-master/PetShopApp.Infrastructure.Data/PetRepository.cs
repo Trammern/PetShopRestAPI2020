@@ -1,6 +1,8 @@
 ﻿using PetShopApp.Core.DomainServices;
 using PetShopApp.Core.Entities;
+
 using System;
+using System.Linq;
 using System.Collections.Generic;
 using System.Reflection.Emit;
 using System.Text;
@@ -13,7 +15,9 @@ namespace PetShopApp.Infrastructure.Data
  
     private static List<Pet> _pet = new List<Pet>();
 
-        //Initializing Test Data
+       /// <summary>
+       /// Initialize Mock Data
+       /// </summary>
         public void InitData()
         {
             Datainitializer.InitData();
@@ -30,6 +34,44 @@ namespace PetShopApp.Infrastructure.Data
         #endregion
 
         #region Read
+        /// <summary>
+        /// Filter the list of Pets else return full list
+        /// </summary>
+        /// <param name="filter"></param>
+        /// <returns></returns>
+        public FilteredList<Pet> ReadAll(Filter filter)
+        {
+            var filteredList = new FilteredList<Pet>();
+
+            filteredList.TotalCount = FakeDB.pets.Count;
+            filteredList.FilterUsed = filter;
+
+            IEnumerable<Pet> filtering = FakeDB.pets;
+
+            if (!string.IsNullOrEmpty(filter.SearchText))
+            {
+                switch (filter.SearchField)
+                {
+                    case "PetName":
+                        filtering = filtering.Where(c => c.PetName.Contains(filter.SearchText));
+                        break;
+                    case "PetType":
+                        filtering = filtering.Where(c => c.PetType.Contains(filter.SearchText));
+                        break;
+                }
+            }
+            if (!string.IsNullOrEmpty(filter.OrderDirection) && !string.IsNullOrEmpty(filter.OrderProperty))
+            {
+                var prop = typeof(Pet).GetProperty(filter.OrderProperty);
+                filtering = "ASC".Equals(filter.OrderDirection) ?
+                    filtering.OrderBy(c => prop.GetValue(c, null)) :
+                    filtering.OrderByDescending(c => prop.GetValue(c, null));
+
+            }
+
+            filteredList.List = filtering.ToList();
+            return filteredList;
+        }
         public List<Pet> FindPetsByType(string searchString)
         {
             List<Pet> SearchedPets = new List<Pet>();
@@ -46,10 +88,12 @@ namespace PetShopApp.Infrastructure.Data
         {
             return FakeDB.pets;
         }
+        
         public IEnumerable<Pet> ReadAll()
         {
             return _pet;
         }
+        
         public Pet FindPetByID(int PetId)
         {
             foreach (var pet in FakeDB.pets)

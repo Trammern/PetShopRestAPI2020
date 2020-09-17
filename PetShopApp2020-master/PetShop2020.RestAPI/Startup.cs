@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -32,13 +34,30 @@ namespace PetShop2020.RestAPI
         {
 
             services.AddScoped<IPetRepository, PetRepository>();
+            services.AddScoped<IOwnerRepository, OwnerRepository>();
             services.AddScoped<IPetService, PetServices>();
+            services.AddScoped<IOwnerService, OwnerService>();
+
            
            services.AddControllers().AddNewtonsoftJson(o =>
            {
                o.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
                o.SerializerSettings.MaxDepth = 5;
            });
+            services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc("v1",
+                    new Microsoft.OpenApi.Models.OpenApiInfo
+                    {
+                        Title = "Pet SHop API",
+                        Description = "Test test test",
+                        Version = "v1"
+                    });
+
+                var fileName = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var filePath = Path.Combine(AppContext.BaseDirectory, fileName);
+                options.IncludeXmlComments(filePath);
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -54,11 +73,22 @@ namespace PetShop2020.RestAPI
             app.UseRouting();
 
             app.UseAuthorization();
-
+            
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+            
+            app.UseSwagger();
+
+            app.UseSwaggerUI(options =>
+            {
+               options.SwaggerEndpoint("/swagger/v1/swagger.json", "Pet Shop API");
+                options.RoutePrefix = "";
+            });
+           
+
+
         }
     }
 }

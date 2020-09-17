@@ -2,25 +2,29 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Dynamic;
 
 namespace PetShopApp.Infrastructure.Data
 {
     public class Datainitializer
     {
 
+        Owner own = new Owner();
         public static void InitData()
         {
-
-            Pet p = new Pet();
-            p.PetId = FakeDB.PetId++;
-            p.PetName = "Bob";
-            p.PetType = "Cat";
-            p.BirthDay = DateTime.Now.AddDays(-10);
-            p.Color = "Green";
-            p.PreviousOwner = "";
-            p.Price = 1000;
-
-
+ 
+            var p = new Pet()
+            {
+                PetId = FakeDB.PetId++,
+                PetName = "Bob",
+                PetType = "Cat",
+                BirthDay = DateTime.Now.AddDays(-10),
+                Color = "Green",
+                PreviousOwner = "",
+                Price = 1000,
+               
+        };
+            Owner own = new Owner();
             Pet p1 = new Pet();
             p1.PetId = FakeDB.PetId++;
             p1.PetName = "Dingo";
@@ -29,7 +33,9 @@ namespace PetShopApp.Infrastructure.Data
             p1.Color = "Brown";
             p1.PreviousOwner = "Jørgen";
             p1.Price = 2500;
+            p1.owner = own;
 
+            Owner own1 = new Owner();
             Pet p2 = new Pet();
             p2.PetId = FakeDB.PetId++;
             p2.PetName = "Raul";
@@ -38,6 +44,7 @@ namespace PetShopApp.Infrastructure.Data
             p2.Color = "Dark Pink";
             p2.PreviousOwner = "Ingolf";
             p2.Price = 6700;
+            p2.owner = own1;
 
             Pet p3 = new Pet();
             p3.PetId = FakeDB.PetId++;
@@ -56,6 +63,7 @@ namespace PetShopApp.Infrastructure.Data
             p4.Color = "Blonde";
             p4.PreviousOwner = "HC";
             p4.Price = 25000;
+            
 
             FakeDB.pets.Add(p);
             FakeDB.pets.Add(p1);
@@ -63,6 +71,40 @@ namespace PetShopApp.Infrastructure.Data
             FakeDB.pets.Add(p3);
             FakeDB.pets.Add(p4);
 
+
+            
+            own.OwnerId = FakeDB.OwnerId++;
+            own.OwnerFirstName = "Lars";
+            own.OwnerLastName = "Bilde";
+            own.Address = "Ostevej 1";
+            own.PhoneNumber = "12345678";
+            own.Email = "This@that.dk";
+            
+           
+
+            
+            own1.OwnerId = FakeDB.OwnerId++;
+            own1.OwnerFirstName = "Larsi";
+            own1.OwnerLastName = "Bildei";
+            own1.Address = "Ostevej 12";
+            own1.PhoneNumber = "1234567810";
+            own1.Email = "This@that.com";
+            
+
+            Owner own2 = new Owner();
+            own2.OwnerId = FakeDB.OwnerId++;
+            own2.OwnerFirstName = "Larso";
+            own2.OwnerLastName = "Bildeo";
+            own2.Address = "Ostevej 6";
+            own2.PhoneNumber = "12341278";
+            own2.Email = "This@that.fr";
+            
+
+            FakeDB.Owners.Add(own);
+            FakeDB.Owners.Add(own1);
+            FakeDB.Owners.Add(own2);
         }
+
+      
     }
 }

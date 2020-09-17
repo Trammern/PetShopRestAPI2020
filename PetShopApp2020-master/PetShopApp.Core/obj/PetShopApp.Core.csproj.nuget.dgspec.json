@@ -81,6 +81,65 @@
             "projectReferences": {
               "C:\\Work\\PetShopRestAPI\\PetShopApp2020-master\\PetShopApp.Core.Entities\\PetShopApp.Core.Entities.csproj": {
                 "projectPath": "C:\\Work\\PetShopRestAPI\\PetShopApp2020-master\\PetShopApp.Core.Entities\\PetShopApp.Core.Entities.csproj"
+              },
+              "C:\\Work\\PetShopRestAPI\\PetShopApp2020-master\\PetShopApp.Filter\\PetShopApp.Filter.csproj": {
+                "projectPath": "C:\\Work\\PetShopRestAPI\\PetShopApp2020-master\\PetShopApp.Filter\\PetShopApp.Filter.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Work\\PetShopRestAPI\\PetShopApp2020-master\\PetShopApp.Filter\\PetShopApp.Filter.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Work\\PetShopRestAPI\\PetShopApp2020-master\\PetShopApp.Filter\\PetShopApp.Filter.csproj",
+        "projectName": "PetShopApp.Filter",
+        "projectPath": "C:\\Work\\PetShopRestAPI\\PetShopApp2020-master\\PetShopApp.Filter\\PetShopApp.Filter.csproj",
+        "packagesPath": "C:\\Users\\Tramm\\.nuget\\packages\\",
+        "outputPath": "C:\\Work\\PetShopRestAPI\\PetShopApp2020-master\\PetShopApp.Filter\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Tramm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Work\\PetShopRestAPI\\PetShopApp2020-master\\PetShopApp.Core.Entities\\PetShopApp.Core.Entities.csproj": {
+                "projectPath": "C:\\Work\\PetShopRestAPI\\PetShopApp2020-master\\PetShopApp.Core.Entities\\PetShopApp.Core.Entities.csproj"
               }
             }
           }
