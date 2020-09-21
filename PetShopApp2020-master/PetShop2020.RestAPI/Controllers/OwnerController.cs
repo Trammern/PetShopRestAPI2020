@@ -22,7 +22,7 @@ namespace PetShop2020.RestAPI.Controllers
         }
         // GET: api/<OwnerController>
         [HttpGet]
-        public ActionResult<IEnumerable<Owner>> Get([FromQuery] Filter filter)
+        public ActionResult<FilteredList<Owner>> Get([FromQuery] Filter filter)
         {
             try
             {

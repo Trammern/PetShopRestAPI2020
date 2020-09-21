@@ -7,9 +7,7 @@ namespace PetShopApp.Core.ApplicationServices
 {
    public interface IOwnerService
     {
-        Owner NewOwner(string firstName, string lastName, string address,
-            string phoneNumber, string email);
-
+ 
         Owner CreateOwner(Owner owner);
 
         FilteredList<Owner> GetAllOwners(Filter filter);

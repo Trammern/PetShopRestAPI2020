@@ -9,23 +9,18 @@ namespace PetShopApp.Core.ApplicationServices
 {
    public interface IPetService
     {
-        Pet NewPet(string petName,
-           string petType,
-           DateTime birthDay,
-           string color,
-           string previousOwner,
-           double price
-           );
+    /// <summary>
+    /// Create a new Pet
+    /// </summary>
+    /// <param name="pet"></param>
+    /// <returns></returns>
         Pet CreatePet(Pet pet);
-
-      //  IEnumerable<Pet> GetAllPets(Filter filter);
 
         List<Pet> Get3CheapestPets();
         public List<Pet> FindPetsByType(string searchString);
         Pet FindPetById(int Petid);
         FilteredList<Pet> GetAllPets(Filter filter);
-      //  Pet GetAllPetsWithOwners(int PetId);
-
+  
         Pet EditPet(Pet petEdit);
 
         Pet DeletePet(int Petid);

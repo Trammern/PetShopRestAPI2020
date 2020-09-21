@@ -9,7 +9,9 @@ namespace PetShopApp.Infrastructure.Data
     public class Datainitializer
     {
 
-        Owner own = new Owner();
+        /// <summary>
+        /// Mock data of all entyties
+        /// </summary>
         public static void InitData()
         {
  
@@ -103,6 +105,12 @@ namespace PetShopApp.Infrastructure.Data
             FakeDB.Owners.Add(own);
             FakeDB.Owners.Add(own1);
             FakeDB.Owners.Add(own2);
+
+            PetTypes pt = new PetTypes();
+            pt.TypeId = FakeDB.TypeId++;
+            pt.PetType = "Dog";
+
+            FakeDB.PetTyper.Add(pt);
         }
 
       

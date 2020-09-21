@@ -11,48 +11,53 @@ namespace PetShopApp.Core.ApplicationServices.Services
     public class OwnerService : IOwnerService
     {
         readonly IOwnerRepository _ownerRepo;
-        readonly IPetRepository _petRepo;
+       
 
         public OwnerService(IOwnerRepository ownerRepository,
             IPetRepository petRepository)
         {
             _ownerRepo = ownerRepository;
-            _petRepo = petRepository;
+           
         }
+        /// <summary>
+        /// Create a Owner in the database
+        /// </summary>
+        /// <param name="owner"></param>
+        /// <returns></returns>
         public Owner CreateOwner(Owner owner)
         {
             return _ownerRepo.Create(owner);
         }
 
+
+        /// <summary>
+        /// Deletes a Owner in the database
+        /// </summary>
+        /// <param name="OwnerId"></param>
+        /// <returns></returns>
+        /// 
         public Owner DeleteOwner(int OwnerId)
         {
             return _ownerRepo.DeleteOwner(OwnerId);
         }
-/*
-        public List<Owner> GetAllOwners()
-        {
-            return _ownerRepo.ReadAll().ToList();
-        }
 
-        */
-        public Owner NewOwner(string firstName, string lastName, string address,
-            string phoneNumber, string email)
-        {
-            var owner = new Owner()
-            {
-               OwnerFirstName = firstName,
-               OwnerLastName = lastName,
-               Address = address,
-               PhoneNumber = phoneNumber,
-               Email = email
-            };
 
-            return owner;
-        }
+        /// <summary>
+        /// Finds a Owner by a OwnerId
+        /// </summary>
+        /// <param name="Ownerid"></param>
+        /// <returns></returns>
         public Owner FindOwnerById(int Ownerid)
         {
             return _ownerRepo.ReadById(Ownerid);
         }
+
+
+        /// <summary>
+        /// Updates a Owner
+        /// </summary>
+        /// <param name="ownerUpdate"></param>
+        /// <returns></returns>
         public Owner UpdateOwner(Owner ownerUpdate)
         {
             var owner = FindOwnerById(ownerUpdate.OwnerId);
@@ -65,6 +70,12 @@ namespace PetShopApp.Core.ApplicationServices.Services
             return owner;
         }
 
+
+        /// <summary>
+        /// Filters the Owners name and returns a list 
+        /// </summary>
+        /// <param name="filter"></param>
+        /// <returns></returns>
         public FilteredList<Owner> GetAllOwners(Filter filter)
         {
             if (!string.IsNullOrEmpty(filter.SearchText) && string.IsNullOrEmpty(filter.SearchField))
@@ -74,8 +85,6 @@ namespace PetShopApp.Core.ApplicationServices.Services
             return _ownerRepo.ReadAll(filter);
         }
     }
-            
 
-      
-    }
+}
 

@@ -24,7 +24,11 @@ namespace PetShopApp.Infrastructure.Data
         }
 
         #region Create
-        //Create
+        /// <summary>
+        /// Create a pet
+        /// </summary>
+        /// <param name="pet"></param>
+        /// <returns></returns>
         public Pet Create(Pet pet)
         {
             pet.PetId = FakeDB.PetId++;
@@ -72,6 +76,12 @@ namespace PetShopApp.Infrastructure.Data
             filteredList.List = filtering.ToList();
             return filteredList;
         }
+
+        /// <summary>
+        /// Finds Pets by ID
+        /// </summary>
+        /// <param name="searchString"></param>
+        /// <returns></returns>
         public List<Pet> FindPetsByType(string searchString)
         {
             List<Pet> SearchedPets = new List<Pet>();
@@ -84,6 +94,11 @@ namespace PetShopApp.Infrastructure.Data
             }
             return SearchedPets;
         }
+
+        /// <summary>
+        /// Returns a list of all pets
+        /// </summary>
+        /// <returns></returns>
         public List<Pet> ReadPets()
         {
             return FakeDB.pets;
@@ -94,6 +109,12 @@ namespace PetShopApp.Infrastructure.Data
             return _pet;
         }
         
+
+        /// <summary>
+        /// Finds pets by ID
+        /// </summary>
+        /// <param name="PetId"></param>
+        /// <returns></returns>
         public Pet FindPetByID(int PetId)
         {
             foreach (var pet in FakeDB.pets)
@@ -108,6 +129,12 @@ namespace PetShopApp.Infrastructure.Data
         #endregion
 
         #region Update
+
+        /// <summary>
+        /// Updates the Pets
+        /// </summary>
+        /// <param name="petUpdate"></param>
+        /// <returns></returns>
         public Pet Update(Pet petUpdate)
         {
             var petFromDB = this.FindPetByID(petUpdate.PetId);
@@ -115,7 +142,7 @@ namespace PetShopApp.Infrastructure.Data
             {
                 petFromDB.PetName = petUpdate.PetName;
                 petFromDB.PetType = petUpdate.PetType;
-
+                petFromDB.owner = petUpdate.owner;
                 petFromDB.Color = petUpdate.Color;
                 petFromDB.PreviousOwner = petUpdate.PreviousOwner;
                 petFromDB.Price = petUpdate.Price;
@@ -127,6 +154,12 @@ namespace PetShopApp.Infrastructure.Data
         #endregion
 
         #region Delete
+
+        /// <summary>
+        /// Deletes the pet
+        /// </summary>
+        /// <param name="PetId"></param>
+        /// <returns></returns>
         public Pet DeletePet(int PetId)
         {
             var petFound = this.FindPetByID(PetId);

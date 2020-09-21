@@ -6,6 +6,9 @@ using System.Text;
 
 namespace PetShopApp.Infrastructure.Data
 {
+    /// <summary>
+    /// Fake database
+    /// </summary>
     public class FakeDB
     {
         public static int PetId = 1;
@@ -14,11 +17,11 @@ namespace PetShopApp.Infrastructure.Data
         public static int OwnerId = 1;
         public static List<Owner> Owners = new List<Owner>();
 
-     //   private static FakeDB fakeDBInstance;
-     //   private FakeDB()
-     //   {
-     //       Datainitializer.InitData;
-     //   }
+        public static int TypeId = 1;
+        public static List<PetTypes> PetTyper = new List<PetTypes>();
+
+
+ 
 
     }
 }

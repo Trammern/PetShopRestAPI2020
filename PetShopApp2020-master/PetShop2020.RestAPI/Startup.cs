@@ -34,8 +34,10 @@ namespace PetShop2020.RestAPI
         {
 
             services.AddScoped<IPetRepository, PetRepository>();
+            services.AddScoped<IPetTypeRepository, TypeRepository>();
             services.AddScoped<IOwnerRepository, OwnerRepository>();
             services.AddScoped<IPetService, PetServices>();
+            services.AddScoped<IPetTypes, TypeService>();
             services.AddScoped<IOwnerService, OwnerService>();
 
            

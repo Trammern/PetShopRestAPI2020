@@ -9,21 +9,34 @@ namespace PetShopApp.Infrastructure.Data
 {
     public class OwnerRepository : IOwnerRepository
     {
-
-       
-          public void InitData()
+        /// <summary>
+        /// Initializ the data
+        /// </summary>
+                 public void InitData()
         {
             if (FakeDB.Owners.Count > 0) return;
             {
                 Datainitializer.InitData();
             }
         }
+
+        /// <summary>
+        /// Creates a Owner
+        /// </summary>
+        /// <param name="owner"></param>
+        /// <returns></returns>
         public Owner Create(Owner owner)
         {
             owner.OwnerId = FakeDB.OwnerId++;
             FakeDB.Owners.Add(owner);
             return owner;
         }
+
+        /// <summary>
+        /// Filters the owners
+        /// </summary>
+        /// <param name="filter"></param>
+        /// <returns></returns>
         public FilteredList<Owner> ReadAll(Filter filter)
         {
             var filteredList = new FilteredList<Owner>();
@@ -68,11 +81,22 @@ namespace PetShopApp.Infrastructure.Data
             }
             return null;
         }
+
+        /// <summary>
+        /// Reads the Owner by ID
+        /// </summary>
+        /// <param name="OwnerId"></param>
+        /// <returns></returns>
         public Owner ReadById(int OwnerId)
         {
             return FakeDB.Owners.FirstOrDefault(Owner => Owner.OwnerId == OwnerId);
         }
 
+        /// <summary>
+        /// Updates the owner
+        /// </summary>
+        /// <param name="ownerUpdate"></param>
+        /// <returns></returns>
         public Owner Update(Owner ownerUpdate)
         {
             var ownerFromDB = this.FindOwnerByID(ownerUpdate.OwnerId);
@@ -89,10 +113,12 @@ namespace PetShopApp.Infrastructure.Data
             }
             return null;
         }
-        public IEnumerable<Owner> ReadAll()
-        {
-            return FakeDB.Owners;
-        }
+
+      /// <summary>
+      /// Find a Owner by ID
+      /// </summary>
+      /// <param name="OwnerId"></param>
+      /// <returns></returns>
         public Owner FindOwnerByID(int OwnerId)
         {
             foreach (var owner in FakeDB.Owners)
