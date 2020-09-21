@@ -32,6 +32,7 @@ namespace PetShop2020.RestAPI.Controllers
         {
             try
             {
+                
                 return Ok(_petService.GetAllPets(filter));
             }
             catch (Exception e)
@@ -83,6 +84,10 @@ namespace PetShop2020.RestAPI.Controllers
             if (pet == null) 
             {
                 return StatusCode(404, "Did not find Pet with that Id" + Petid);
+            }
+            if(Petid < 1)
+            {
+                return NotFound("Error 404, Owner not found");
             }
             return Ok($"Pet with Id: {Petid} is Deleted");
         }
