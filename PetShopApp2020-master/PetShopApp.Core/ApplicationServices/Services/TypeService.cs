@@ -1,8 +1,5 @@
 ﻿using PetShopApp.Core.DomainServices;
 using PetShopApp.Core.Entities;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace PetShopApp.Core.ApplicationServices.Services
 {
@@ -66,7 +63,7 @@ namespace PetShopApp.Core.ApplicationServices.Services
         public PetTypes UpdateType(PetTypes PetTypeUpdate)
         {
             var petTyper = FindTypeById(PetTypeUpdate.TypeId);
-            
+
             petTyper.PetType = PetTypeUpdate.PetType;
             petTyper.Race = PetTypeUpdate.Race;
 

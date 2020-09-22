@@ -1,9 +1,7 @@
 ﻿using PetShopApp.Core.DomainServices;
 using PetShopApp.Core.Entities;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace PetShopApp.Infrastructure.Data
 {
@@ -12,7 +10,7 @@ namespace PetShopApp.Infrastructure.Data
         /// <summary>
         /// Initializ the data
         /// </summary>
-                 public void InitData()
+        public void InitData()
         {
             if (FakeDB.Owners.Count > 0) return;
             {
@@ -114,11 +112,11 @@ namespace PetShopApp.Infrastructure.Data
             return null;
         }
 
-      /// <summary>
-      /// Find a Owner by ID
-      /// </summary>
-      /// <param name="OwnerId"></param>
-      /// <returns></returns>
+        /// <summary>
+        /// Find a Owner by ID
+        /// </summary>
+        /// <param name="OwnerId"></param>
+        /// <returns></returns>
         public Owner FindOwnerByID(int OwnerId)
         {
             foreach (var owner in FakeDB.Owners)
@@ -133,6 +131,6 @@ namespace PetShopApp.Infrastructure.Data
 
         }
 
-        
+
     }
 }

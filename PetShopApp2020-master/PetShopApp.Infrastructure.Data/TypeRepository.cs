@@ -1,9 +1,7 @@
 ﻿using PetShopApp.Core.DomainServices;
 using PetShopApp.Core.Entities;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace PetShopApp.Infrastructure.Data
 {
@@ -118,7 +116,7 @@ namespace PetShopApp.Infrastructure.Data
                 typeFromDB.PetType = typeUpdate.PetType;
                 typeFromDB.Race = typeUpdate.Race;
 
-              
+
                 return typeFromDB;
 
             }

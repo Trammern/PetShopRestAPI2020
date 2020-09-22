@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30406.217
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetShopApplication", "PetShopApplication\PetShopApplication.csproj", "{C2A7B1CF-2334-4981-B103-C8A8940BCC08}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetShopApp.Core.Entities", "PetShopApp.Core.Entities\PetShopApp.Core.Entities.csproj", "{F423E89B-0367-45D3-B641-20726C4D2C1B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetShopApp.Core", "PetShopApp.Core\PetShopApp.Core.csproj", "{61818367-BE9A-4678-B918-D8E902B47513}"
@@ -23,7 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetShop2020.RestAPI", "PetS
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Filteret", "Filteret", "{50D0BF38-9883-4769-9896-822BD686670F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetShopApp.Filter", "PetShopApp.Filter\PetShopApp.Filter.csproj", "{DAA1D3AE-57B8-40D2-9729-167F8CDF0009}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetShopApp.Filter", "PetShopApp.Filter\PetShopApp.Filter.csproj", "{DAA1D3AE-57B8-40D2-9729-167F8CDF0009}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetShopApp2020.Infrastructure.Data", "PetShopApp2020.Infrastructure.Data\PetShopApp2020.Infrastructure.Data.csproj", "{F3F6EC93-D3A9-4828-96B0-74EB7063EA2B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,10 +31,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C2A7B1CF-2334-4981-B103-C8A8940BCC08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C2A7B1CF-2334-4981-B103-C8A8940BCC08}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C2A7B1CF-2334-4981-B103-C8A8940BCC08}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C2A7B1CF-2334-4981-B103-C8A8940BCC08}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F423E89B-0367-45D3-B641-20726C4D2C1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F423E89B-0367-45D3-B641-20726C4D2C1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F423E89B-0367-45D3-B641-20726C4D2C1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -55,12 +51,15 @@ Global
 		{DAA1D3AE-57B8-40D2-9729-167F8CDF0009}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DAA1D3AE-57B8-40D2-9729-167F8CDF0009}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DAA1D3AE-57B8-40D2-9729-167F8CDF0009}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3F6EC93-D3A9-4828-96B0-74EB7063EA2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3F6EC93-D3A9-4828-96B0-74EB7063EA2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3F6EC93-D3A9-4828-96B0-74EB7063EA2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3F6EC93-D3A9-4828-96B0-74EB7063EA2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{C2A7B1CF-2334-4981-B103-C8A8940BCC08} = {2B90C850-DBE4-4B25-B90D-6C34304B2871}
 		{F423E89B-0367-45D3-B641-20726C4D2C1B} = {F3754922-8CA8-4C82-85BB-4D9DDE1A8E10}
 		{61818367-BE9A-4678-B918-D8E902B47513} = {F3754922-8CA8-4C82-85BB-4D9DDE1A8E10}
 		{89473601-00E4-45BD-BED3-0824B29E26D2} = {81BDC936-68F9-493F-A78A-2A27D735BC37}
@@ -68,6 +67,7 @@ Global
 		{5B109A4E-C4C5-4239-A47F-B7685FBA5515} = {2B90C850-DBE4-4B25-B90D-6C34304B2871}
 		{50D0BF38-9883-4769-9896-822BD686670F} = {F3754922-8CA8-4C82-85BB-4D9DDE1A8E10}
 		{DAA1D3AE-57B8-40D2-9729-167F8CDF0009} = {50D0BF38-9883-4769-9896-822BD686670F}
+		{F3F6EC93-D3A9-4828-96B0-74EB7063EA2B} = {81BDC936-68F9-493F-A78A-2A27D735BC37}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {120AF057-834D-410F-8272-D89ECE73A3C9}

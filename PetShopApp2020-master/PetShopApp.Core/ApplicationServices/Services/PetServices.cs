@@ -1,11 +1,7 @@
 ﻿using PetShopApp.Core.DomainServices;
 using PetShopApp.Core.Entities;
-
-using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
-using System.Text;
 
 namespace PetShopApp.Core.ApplicationServices.Services
 {
@@ -33,7 +29,7 @@ namespace PetShopApp.Core.ApplicationServices.Services
         }
 
         #endregion
-      
+
         #region Read
         /// <summary>
         /// Filters the Pets by PetName
@@ -59,10 +55,10 @@ namespace PetShopApp.Core.ApplicationServices.Services
         }
 
 
-         /// <summary>
-         /// Get the 3 cheapest pets
-         /// </summary>
-         /// <returns></returns>
+        /// <summary>
+        /// Get the 3 cheapest pets
+        /// </summary>
+        /// <returns></returns>
         public List<Pet> Get3CheapestPets()
         {
             return _petRepo.ReadPets()
@@ -102,7 +98,7 @@ namespace PetShopApp.Core.ApplicationServices.Services
             return pet;
 
         }
-  
+
         #endregion
 
         #region Delete

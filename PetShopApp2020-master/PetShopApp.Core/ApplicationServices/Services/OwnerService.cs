@@ -1,23 +1,18 @@
 ﻿using PetShopApp.Core.DomainServices;
 using PetShopApp.Core.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Metadata.Ecma335;
-using System.Text;
 
 namespace PetShopApp.Core.ApplicationServices.Services
 {
     public class OwnerService : IOwnerService
     {
         readonly IOwnerRepository _ownerRepo;
-       
+
 
         public OwnerService(IOwnerRepository ownerRepository,
             IPetRepository petRepository)
         {
             _ownerRepo = ownerRepository;
-           
+
         }
         /// <summary>
         /// Create a Owner in the database

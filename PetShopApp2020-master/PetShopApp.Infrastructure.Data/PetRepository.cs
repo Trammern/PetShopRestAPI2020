@@ -1,23 +1,19 @@
 ﻿using PetShopApp.Core.DomainServices;
 using PetShopApp.Core.Entities;
-
-using System;
-using System.Linq;
 using System.Collections.Generic;
-using System.Reflection.Emit;
-using System.Text;
+using System.Linq;
 
 namespace PetShopApp.Infrastructure.Data
 {
 
     public class PetRepository : IPetRepository
     {
- 
-    private static List<Pet> _pet = new List<Pet>();
 
-       /// <summary>
-       /// Initialize Mock Data
-       /// </summary>
+        private static List<Pet> _pet = new List<Pet>();
+
+        /// <summary>
+        /// Initialize Mock Data
+        /// </summary>
         public void InitData()
         {
             Datainitializer.InitData();
@@ -103,12 +99,12 @@ namespace PetShopApp.Infrastructure.Data
         {
             return FakeDB.pets;
         }
-        
+
         public IEnumerable<Pet> ReadAll()
         {
             return _pet;
         }
-        
+
 
         /// <summary>
         /// Finds pets by ID
