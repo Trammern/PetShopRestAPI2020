@@ -19,7 +19,7 @@ namespace PetShopApp.Infrastructure.Data
             {
                 PetId = FakeDB.PetId++,
                 PetName = "Bob",
-                PetType = "Cat",
+                PetTypers = "Cat",
                 BirthDay = DateTime.Now.AddDays(-10),
                 Color = "Green",
                 PreviousOwner = "",
@@ -30,7 +30,7 @@ namespace PetShopApp.Infrastructure.Data
             Pet p1 = new Pet();
             p1.PetId = FakeDB.PetId++;
             p1.PetName = "Dingo";
-            p1.PetType = "Dog";
+            p1.PetTypers = "Dog";
             p1.BirthDay = DateTime.Now.AddDays(-20);
             p1.Color = "Brown";
             p1.PreviousOwner = "Jørgen";
@@ -41,7 +41,7 @@ namespace PetShopApp.Infrastructure.Data
             Pet p2 = new Pet();
             p2.PetId = FakeDB.PetId++;
             p2.PetName = "Raul";
-            p2.PetType = "Fish";
+            p2.PetTypers = "Fish";
             p2.BirthDay = DateTime.Now.AddDays(-15);
             p2.Color = "Dark Pink";
             p2.PreviousOwner = "Ingolf";
@@ -51,7 +51,7 @@ namespace PetShopApp.Infrastructure.Data
             Pet p3 = new Pet();
             p3.PetId = FakeDB.PetId++;
             p3.PetName = "Fido";
-            p3.PetType = "Dog";
+            p3.PetTypers = "Dog";
             p3.BirthDay = DateTime.Now.AddDays(-20);
             p3.Color = "Black";
             p3.PreviousOwner = "Hans";
@@ -60,7 +60,7 @@ namespace PetShopApp.Infrastructure.Data
             Pet p4 = new Pet();
             p4.PetId = FakeDB.PetId++;
             p4.PetName = "Laila";
-            p4.PetType = "Dog";
+            p4.PetTypers = "Dog";
             p4.BirthDay = DateTime.Now.AddDays(-20);
             p4.Color = "Blonde";
             p4.PreviousOwner = "HC";

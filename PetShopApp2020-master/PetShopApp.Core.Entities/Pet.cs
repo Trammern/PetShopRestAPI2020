@@ -10,7 +10,7 @@ namespace PetShopApp.Core.Entities
 
         public string PetName { get; set; }
 
-        public string PetType { get; set; }
+        public string PetTypers { get; set; }
 
         public DateTime BirthDay { get; set; }
 
@@ -22,13 +22,9 @@ namespace PetShopApp.Core.Entities
 
         public double Price { get; set; }
         public Owner owner { get; set; }
-
-
-        public override string ToString()
-        {
-            return PetId + " " + PetName + " " + PetType + " " + BirthDay + " " + Price;
-        }
+        public List <PetTypes> pettyper { get; set; }
         
 
+     
     }
 }

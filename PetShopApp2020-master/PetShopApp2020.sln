@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetShopApp.Core.Entities", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetShopApp.Core", "PetShopApp.Core\PetShopApp.Core.csproj", "{61818367-BE9A-4678-B918-D8E902B47513}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetShopApp.Infrastructure.Data", "PetShopApp.Infrastructure.Data\PetShopApp.Infrastructure.Data.csproj", "{89473601-00E4-45BD-BED3-0824B29E26D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetShopApp.Infrastructure.Static.Data", "PetShopApp.Infrastructure.Data\PetShopApp.Infrastructure.Static.Data.csproj", "{89473601-00E4-45BD-BED3-0824B29E26D2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{F3754922-8CA8-4C82-85BB-4D9DDE1A8E10}"
 EndProject

@@ -22,7 +22,6 @@ C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Infrastructure.Data\bin\
 C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Infrastructure.Data\obj\Debug\netcoreapp3.1\PetShopApp.Infrastructure.Data.csprojAssemblyReference.cache
 C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Infrastructure.Data\obj\Debug\netcoreapp3.1\PetShopApp.Infrastructure.Data.AssemblyInfoInputs.cache
 C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Infrastructure.Data\obj\Debug\netcoreapp3.1\PetShopApp.Infrastructure.Data.AssemblyInfo.cs
-C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Infrastructure.Data\obj\Debug\netcoreapp3.1\PetShopApp.Infrastructure.Data.csproj.CoreCompileInputs.cache
 C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Infrastructure.Data\obj\Debug\netcoreapp3.1\PetShopApp.Infrastructure.Data.csproj.CopyComplete
 C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Infrastructure.Data\obj\Debug\netcoreapp3.1\PetShopApp.Infrastructure.Data.dll
 C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp.Infrastructure.Data\obj\Debug\netcoreapp3.1\PetShopApp.Infrastructure.Data.pdb

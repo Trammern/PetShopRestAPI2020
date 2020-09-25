@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using PetShopApp.Core.ApplicationServices;
 using PetShopApp.Core.Entities;
+using System;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -13,14 +10,14 @@ namespace PetShop2020.RestAPI.Controllers
     [Route("api/types")]
     [ApiController]
     public class TypesController : ControllerBase
-    { 
+    {
         private readonly IPetTypes _petTypeService;
 
-    public TypesController(IPetTypes petTypeService)
-    {
-        _petTypeService = petTypeService;
-    }
-    
+        public TypesController(IPetTypes petTypeService)
+        {
+            _petTypeService = petTypeService;
+        }
+
         // GET: api/<TypesController>
         [HttpGet]
         public ActionResult<FilteredList<PetTypes>> Get([FromQuery] Filter filter)
@@ -49,10 +46,10 @@ namespace PetShop2020.RestAPI.Controllers
         public ActionResult<PetTypes> Post([FromBody] PetTypes petTypes)
         {
             if (string.IsNullOrEmpty(petTypes.PetType))
-            { 
+            {
                 return StatusCode(500, "Can not Create Type, try again");
 
-        }
+            }
 
             return _petTypeService.CreateType(petTypes);
         }

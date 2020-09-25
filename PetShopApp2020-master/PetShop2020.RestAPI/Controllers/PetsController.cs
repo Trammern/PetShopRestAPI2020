@@ -1,9 +1,8 @@
-﻿using System;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using PetShopApp.Core.ApplicationServices;
 using PetShopApp.Core.Entities;
 
-using PetShopApp.Infrastructure.Data;
+using System;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -14,17 +13,14 @@ namespace PetShop2020.RestAPI.Controllers
     public class PetsController : ControllerBase
     {
         private readonly IPetService _petService;
-      
+
 
         public PetsController(IPetService petService)
         {
             _petService = petService;
 
-            if (FakeDB.Owners.Count > 0) return;
-            {
-                Datainitializer.InitData();
-            }
-            
+          
+
         }
         // GET: api/<Pets>
         [HttpGet]
@@ -32,46 +28,47 @@ namespace PetShop2020.RestAPI.Controllers
         {
             try
             {
-                
+
                 return Ok(_petService.GetAllPets(filter));
             }
             catch (Exception e)
             {
                 return StatusCode(500, e.Message);
             }
+            
         }
 
         // GET api/<Pets>/5
         [HttpGet("{Petid}")]
-       public ActionResult<Pet> Get(int Petid)
+        public ActionResult<Pet> Get(int Petid)
         {
             if (Petid < 1) return StatusCode(500, "Pet does not excist");
-            return _petService.FindPetById(Petid);
+            return _petService.FindPetReadByIdIncludeOwners(Petid);
         }
 
         // POST api/<Pets>
         [HttpPost]
         public ActionResult<Pet> Post([FromBody] Pet pet)
         {
-            if(string.IsNullOrEmpty(pet.PetName))
+            if (string.IsNullOrEmpty(pet.PetName))
             {
-             
+
                 return StatusCode(500, "Can not Create Pet, try again");
 
             }
 
-           return _petService.CreatePet(pet);
+            return _petService.CreatePet(pet);
         }
 
         // PUT api/<Pets>/5
         [HttpPut("{Petid}")]
         public ActionResult Put(int Petid, [FromBody] Pet pet)
         {
-            if(Petid < 1 || Petid != pet.PetId)
+            if (Petid < 1 || Petid != pet.PetId)
             {
-               return StatusCode(404, "Can not find pet");
+                return StatusCode(404, "Can not find pet");
             }
-           
+
             return Ok(_petService.EditPet(pet));
         }
 
@@ -80,12 +77,12 @@ namespace PetShop2020.RestAPI.Controllers
         public ActionResult<Pet> Delete(int Petid)
         {
 
-         var pet = _petService.DeletePet(Petid);
-            if (pet == null) 
+            var pet = _petService.DeletePet(Petid);
+            if (pet == null)
             {
                 return StatusCode(404, "Did not find Pet with that Id" + Petid);
             }
-            if(Petid < 1)
+            if (Petid < 1)
             {
                 return NotFound("Error 404, Owner not found");
             }

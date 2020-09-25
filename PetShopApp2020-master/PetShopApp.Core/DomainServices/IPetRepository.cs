@@ -8,7 +8,7 @@ namespace PetShopApp.Core.DomainServices
 {
     public interface IPetRepository
     {
-        void InitData();
+      
 
         //Create Pet
         Pet Create(Pet pet);
@@ -24,8 +24,6 @@ namespace PetShopApp.Core.DomainServices
 
         //Delete
         Pet DeletePet(int PetId);
-
-
-      
+        Pet ReadByIdIncludeOwners(int petId);
     }
 }

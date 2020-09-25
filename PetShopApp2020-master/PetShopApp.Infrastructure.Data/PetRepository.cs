@@ -56,7 +56,7 @@ namespace PetShopApp.Infrastructure.Data
                         filtering = filtering.Where(c => c.PetName.Contains(filter.SearchText));
                         break;
                     case "PetType":
-                        filtering = filtering.Where(c => c.PetType.Contains(filter.SearchText));
+                        filtering = filtering.Where(c => c.PetTypers.Contains(filter.SearchText));
                         break;
                 }
             }
@@ -83,7 +83,7 @@ namespace PetShopApp.Infrastructure.Data
             List<Pet> SearchedPets = new List<Pet>();
             foreach (var pet in FakeDB.pets)
             {
-                if (pet.PetType.ToLower() == searchString)
+                if (pet.PetTypers.ToLower() == searchString)
                 {
                     SearchedPets.Add(pet);
                 }
@@ -137,7 +137,7 @@ namespace PetShopApp.Infrastructure.Data
             if (petFromDB != null)
             {
                 petFromDB.PetName = petUpdate.PetName;
-                petFromDB.PetType = petUpdate.PetType;
+                petFromDB.PetTypers = petUpdate.PetTypers;
                 petFromDB.owner = petUpdate.owner;
                 petFromDB.Color = petUpdate.Color;
                 petFromDB.PreviousOwner = petUpdate.PreviousOwner;
@@ -166,6 +166,11 @@ namespace PetShopApp.Infrastructure.Data
                 return petFound;
             }
             return null;
+        }
+
+        public Pet ReadByIdIncludeOwners(int petId)
+        {
+            throw new System.NotImplementedException();
         }
         #endregion
     }

@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using PetShopApp.Core.ApplicationServices;
 using PetShopApp.Core.Entities;
+using System;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -62,7 +59,7 @@ namespace PetShop2020.RestAPI.Controllers
         [HttpPut("{OwnerId}")]
         public ActionResult Put(int OwnerId, [FromBody] Owner owner)
         {
-            if(OwnerId < 1 || OwnerId != owner.OwnerId)
+            if (OwnerId < 1 || OwnerId != owner.OwnerId)
             {
                 return BadRequest("ID must be the same");
             }

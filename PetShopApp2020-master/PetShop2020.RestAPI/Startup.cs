@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -16,7 +17,9 @@ using Newtonsoft.Json;
 using PetShopApp.Core.ApplicationServices;
 using PetShopApp.Core.ApplicationServices.Services;
 using PetShopApp.Core.DomainServices;
-using PetShopApp.Infrastructure.Data;
+using PetShopApp.Core.Entities;
+using PetShopApp2020.Infrastructure.Data;
+using PetShopApp2020.Infrastructure.Data.Repositories;
 
 namespace PetShop2020.RestAPI
 {
@@ -32,6 +35,9 @@ namespace PetShop2020.RestAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+        
+            services.AddDbContext<PetShopAppContext>(
+                opt => opt.UseSqlite("Data Source=PetShop2020.db"));
 
             services.AddScoped<IPetRepository, PetRepository>();
             services.AddScoped<IPetTypeRepository, TypeRepository>();
@@ -52,8 +58,8 @@ namespace PetShop2020.RestAPI
                     new Microsoft.OpenApi.Models.OpenApiInfo
                     {
                         Title = "Pet SHop API",
-                        Description = "Test test test",
-                        Version = "v1"
+                        Description = "The dok for Pet Shop API",
+                        Version = "v2"
                     });
 
                 var fileName = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
@@ -68,6 +74,18 @@ namespace PetShop2020.RestAPI
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                using (var scope = app.ApplicationServices.CreateScope())
+                {
+                    var ctx = scope.ServiceProvider.GetService<PetShopAppContext>();
+
+                   // ctx.Database.EnsureCreated();
+
+                }
+            }
+            else
+            {
+                app.UseHsts();
+
             }
 
             app.UseHttpsRedirection();

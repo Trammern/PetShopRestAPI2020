@@ -75,6 +75,12 @@ namespace PetShopApp.Core.ApplicationServices.Services
         {
             return _petRepo.FindPetsByType(searchString);
         }
+
+        public Pet FindPetReadByIdIncludeOwners(int petId)
+        {
+            var pet = _petRepo.ReadByIdIncludeOwners(petId);
+            return pet;
+        }
         #endregion
 
         #region Update
@@ -88,7 +94,7 @@ namespace PetShopApp.Core.ApplicationServices.Services
         {
             var pet = FindPetById(petEdit.PetId);
             pet.PetName = petEdit.PetName;
-            pet.PetType = petEdit.PetType;
+            pet.PetTypers = petEdit.PetTypers;
             pet.BirthDay = petEdit.BirthDay;
             pet.owner = petEdit.owner;
             pet.Color = petEdit.Color;
