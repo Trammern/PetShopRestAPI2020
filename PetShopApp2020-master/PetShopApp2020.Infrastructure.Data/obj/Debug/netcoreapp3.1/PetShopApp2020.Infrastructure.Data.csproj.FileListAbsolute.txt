@@ -13,4 +13,3 @@ C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp2020.Infrastructure.Data\
 C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp2020.Infrastructure.Data\obj\Debug\netcoreapp3.1\PetShopApp2020.Infrastructure.Data.csproj.CopyComplete
 C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp2020.Infrastructure.Data\obj\Debug\netcoreapp3.1\PetShopApp2020.Infrastructure.Data.dll
 C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp2020.Infrastructure.Data\obj\Debug\netcoreapp3.1\PetShopApp2020.Infrastructure.Data.pdb
-C:\Work\PetShopRestAPI\PetShopApp2020-master\PetShopApp2020.Infrastructure.Data\obj\Debug\netcoreapp3.1\PetShopApp2020.Infrastructure.Data.csproj.CoreCompileInputs.cache
