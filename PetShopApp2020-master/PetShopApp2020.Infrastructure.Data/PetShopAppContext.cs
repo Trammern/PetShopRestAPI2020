@@ -23,6 +23,7 @@ namespace PetShopApp2020.Infrastructure.Data
         public DbSet<Pet> PetTable { get; set; }
         public DbSet<Owner> OwnerTable { get; set; }
         public DbSet<PetTypes> PetTypeTable { get; set; }
+        public DbSet<User> Users { get; set; }
 
 
     }

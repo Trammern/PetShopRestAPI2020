@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using PetShopApp.Core.ApplicationServices;
 using PetShopApp.Core.Entities;
 
@@ -23,6 +24,7 @@ namespace PetShop2020.RestAPI.Controllers
 
         }
         // GET: api/<Pets>
+        [Authorize]
         [HttpGet]
         public ActionResult<FilteredList<Pet>> Get([FromQuery] Filter filter)
         {
